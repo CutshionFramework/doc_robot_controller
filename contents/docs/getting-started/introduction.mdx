@@ -1,102 +1,70 @@
 ---
 title: Introduction
-description: This section provides an overview of Introduction.
+description: This document provides various functions about robot-controller.
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam
+## This project is an open source C++ framework designed to:
 
-## Getting Started
+---
 
-To begin using the Documentation Template, follow these simple steps:
+1. Automate robot arms projects with ease, specifically targeting non-developers.
+2. (Demo preparation tool) Help plan the construction of a project by first visualizing the expected outcome.
 
-1. **Clone the Repository**: Start by cloning the repository to your local machine.
-2. **Install Dependencies**: If any dependencies are required, follow the installation instructions provided.
-3. **Customize**: Replace placeholder content with your actual documentation.
-4. **Publish**: Once customized, publish your documentation for others to access.
+It leverages a C++ backend for performance and efficiency, and a React frontend for a dynamic and interactive user interface
+with a crow server to handle HTTP requests and implements CORS to facilitate secure communication
+between the frontend and backend.
 
-## Blockquotes
+## Prerequisites
 
-Blockquotes are useful for emphasizing key points or quoting external sources:
+---
 
-> "Documentation is a love letter that you write to your future self." - Damian Conway
+Before executing the project, ensure you have installed the required dependencies:
 
-Feel free to use blockquotes to highlight important information or quotes relevant to your documentation.
+- Install 'Microsoft Runtime Packages'
 
-## Code Examples with switch
+  -> Link : https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
 
-Here a custom tab component from shadcn ui is used.
+- Unzip 'Prerequisites.zip' & execute 'C++ SDK_Framework.exe'
 
-<Tabs defaultValue="js" className="pt-5 pb-1">
-  <TabsList className="">
-    <TabsTrigger value="js">layout.jsx</TabsTrigger>
-    <TabsTrigger value="ts">layout.tsx</TabsTrigger>
-  </TabsList>
-  <TabsContent value="js">
-  ```jsx {7} showLineNumbers
-import ThemeProvider from './theme-provider'
- 
-export default function RootLayout({ children }) {
-  return (
-    <html>
-      <body className="container">
-        <ThemeProvider>{children}</ThemeProvider>
-      </body>
-    </html>
-  )}
-````
-  </TabsContent>
-  <TabsContent value="ts">
-```tsx {11} showLineNumbers
-import ThemeProvider from './theme-provider'
- 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html>
-      <body className="container">
-        <ThemeProvider>{children}</ThemeProvider>
-      </body>
-    </html>
-  )
-}
-```
-  </TabsContent>
-</Tabs>
+## Quick Start Guide
 
-## Project Structure
+---
 
-This file serves as the introduction to your documentation. Customize it to provide an overview of your project, highlight key features, and guide users on what to expect from the documentation. Start here to set the tone and direction for your documentation portal.
+### Installation
 
-```plaintext
-root
-├── app
-├── content
-│   └── docs
-│       └── getting-started
-│           ├── introduction.mdx     /*Get started by editing this file*/
-│           └── installation.mdx
-└── package.json
+Follow these steps to install the necessary components:
+
+<Stepper>
+   <StepperItem title="Install Node.js">
+      Ensure you have Node.js installed.
+   </StepperItem>
+
+<StepperItem title="Clone The Repository">
+  Clone our GitHub repository to your local machine.
+
+```bash
+git clone https://github.com/CutshionFramework/Documentation_robot_contoller.git
 ```
 
-The structure ought to be obvious and simple to comprehend thanks to this representation. In the event that you wish to add new routes or a routes section, you can edit the `routes.config.ts` file as necessary.
+</StepperItem>
 
-```ts:lib/routes-config.ts {8}
-export const ROUTES = [
-  {
-    title: "Getting Started",
-    href: "getting-started",
-    items: [
-      { title: "Introduction", href: "/introduction" },
-    - { title: "Installation", href: "/installation" },
-    + { title: "Refrences", href: "/refrences" },
-    ],
-  },
-]
+<StepperItem title="Install Dependencies">
+  Navigate to the project directory and install dependencies.
+
+```bash
+cd Documentation_robot_controller
+npm install
+#or
+npm i
 ```
 
-## Conclusion
+</StepperItem>
 
-Thank you for choosing the Documentation Template for your project. Whether you're documenting software, APIs, or processes, we're here to support you in creating clear and effective documentation. Happy documenting!
+<StepperItem title="Run The Project">
+```bash   
+npm start   
+```
+
+</StepperItem>
+
+</Stepper>
